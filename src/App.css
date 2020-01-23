@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  /* text-align: center; */
 }
 
 .App-logo {
@@ -14,14 +14,9 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align: center;
+  padding-top: 10px;
+
 }
 
 .App-link {
@@ -35,4 +30,112 @@
   to {
     transform: rotate(360deg);
   }
+}
+.container__column ul{
+  display: table;
+  list-style: none;
+  border-spacing: 10px 0;
+  width: 100%;
+  padding: 0px;
+  table-layout: fixed;
+}
+.container__column ul li {
+  display: table-cell;
+  box-sizing: border-box;
+  position: relative;
+  border-spacing: 10px 0;
+  border-radius: 4px;;
+  background-color: #f4f5f7;
+  list-style: none;
+}
+.container__header ul li {
+  padding: 10px;
+}
+.container__header__content{
+  display: flex;
+  justify-content: center;
+}
+.container__header__content h5{
+  margin: 0px;
+}
+
+.container__body ul li {
+  padding: 5px;
+}
+.container__body__content__card{
+  background-color: #ffff;
+  border: 0;
+  border-radius: 2px;
+  box-shadow: 0px 1px 2px 0px rgba(9, 30, 66, 0.25);
+  margin-top: 5px;
+  cursor: move;
+  margin-bottom: 5px;
+  padding: 10px;
+}
+.container__body__content__card:hover{
+  background-color: #EbEcF0;
+}
+.createTask_overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  padding-top: 100px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2;
+  cursor: pointer;
+}
+.createTask_overlay--display{
+  display: block;
+}
+.createTask_modal-content{
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  border-radius: 4px;
+  width: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+.modal-header {
+  padding: 2px 16px;
+  /* background-color: #000000;
+  color: white; */
+}
+
+.modal-body {padding: 2px 16px;}
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.modal-body-content span{
+  text-transform: uppercase;
 }
