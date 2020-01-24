@@ -38,7 +38,7 @@ export default class TaskColumn extends React.Component {
                         })
                     }
                 </ul>
-                <CreateTask {...this.state} handleAdd={this.handleAdd} modalClose={this.modalClose} />
+                <CreateTask {...this.state} handleAdd={this.handleAdd} modalClose={this.modalClose} handleAddData={this.props.handleAddData} />
             </div>
         )
     }
