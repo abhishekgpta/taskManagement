@@ -30,7 +30,7 @@ export default class TaskColumn extends React.Component {
                             return <li key={index}>
                                 <div className="container__header__content">
                                     <span><span><strong>{column.name}</strong></span>
-                                        <button style={{ border: "0px", outline: "none", verticalAlign: "middle", cursor: "pointer" }} name={column.key} onClick={this.handleAdd}>
+                                        <button style={{ border: "0px", outline: "none", verticalAlign: "middle", cursor: "pointer", backgroundColor:"transparent" }} name={column.key} onClick={this.handleAdd}>
                                             <img src={add} alt="" width="25px" name={column.key} />
                                         </button></span>
                                 </div>

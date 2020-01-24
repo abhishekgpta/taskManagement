@@ -46,8 +46,10 @@ class AddColumn extends React.Component {
                                     <div className="container__header__content ">
                                         <span>
                                             {<span><small><strong>{"ADD COLUMN"}</strong></small></span>}
-                                            {<button style={{ border: "0px", outline: "none", verticalAlign: "middle", cursor: "pointer" }} name={"add_column"} onClick={this.handleAdd}>
-                                                <img src={add} alt="" width="25px" name={"add_column"} />
+                                            {<button style={{ border: "0px", outline: "none", verticalAlign: "middle", cursor: "pointer",backgroundColor:"transparent",
+                                        paddingLeft: "4px",
+                                        paddingRight: "0" }} name={"add_column"} onClick={this.handleAdd}>
+                                                <img src={add} alt="" width="15px" name={"add_column"} />
                                             </button>}</span>
                                     </div>
                             }
